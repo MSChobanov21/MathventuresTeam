@@ -32,5 +32,27 @@ int main()
         g[2] = gNum / 10 - g[0] * 100 - g[1] * 10;
         g[3] = gNum % 10;
         cout << g[0] << " " << g[1] << " " << g[2] << " " << g[3] << endl;
+
+        for (int i = 0; i != 4; i++) {
+            if (d[i] == g[i]) bull++;
+        }
+        if (bull == 4) {
+            cout << "Good job!!! You win!!!";
+            return 0;
+        }
+        if (g[0] == d[1]) cow++;
+        if (g[0] == d[2]) cow++;
+        if (g[0] == d[3]) cow++;
+        if (g[1] == d[0]) cow++;
+        if (g[1] == d[2]) cow++;
+        if (g[1] == d[3]) cow++;
+        if (g[2] == d[0]) cow++;
+        if (g[2] == d[1]) cow++;
+        if (g[2] == d[3]) cow++;
+        if (g[3] == d[0]) cow++;
+        if (g[3] == d[1]) cow++;
+        if (g[3] == d[2]) cow++;
+        cout << bull << " bulls and " << cow << " cows" << endl;
     }
+    cout << "Game over " << "the number was " << d[0] << d[1] << d[2] << d[3] << endl;
 }
