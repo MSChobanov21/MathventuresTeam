@@ -23,3 +23,13 @@
     <a href="https://www.microsoft.com/en-ww/microsoft-365/powerpoint"><img src="https://img.icons8.com/color/344/ms-powerpoint.png" alt="MS PowerPoint logo" width=48px /></a>
 </p>
 <hr>
+<h2 align="center">👨‍💻Our Team</h2>
+<p align="center">
+ <a href = "https://github.com/MSChobanov21"> Miroslav Chobanov</a> - Scrum Trainer <br>
+ <a href = "https://github.com/MSIvanov21"> Miroslav Ivanov</a> - Front-End Developer<br>
+ <a href = "https://github.com/SAToptunov21"> Sergey Toptunov</a> - Back-End Developer<br>
+ <a href = "https://github.com/YDPenkov21"> Yavor Penkov</a> - Front-End Developer<br>
+</p>
+<hr>
+<h2 align="center">📫Feedback</h2>
+<h3><p align="center">If you have any feedback, please reach out to us at BrainUp@gmail.com📥</p><h3>
