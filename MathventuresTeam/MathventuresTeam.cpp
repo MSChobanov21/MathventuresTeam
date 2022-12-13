@@ -2,15 +2,71 @@
 #include <string>
 #include <time.h>
 #include <vector>
+#include <fstream>
+
 using namespace std;
+
+void welcomeBrainUp()
+{
+    fstream newfile;
+
+    newfile.open("..\\textFiles\\WelcomeToBrainUp.txt", ios::in); //open a file to perform read operation using file object
+    if (newfile.is_open()) { //checking whether the file is open
+        string tp;
+        while (getline(newfile, tp)) { //read data from file object and put it into string.
+            cout << tp << endl; //print the data of the string
+        }
+        newfile.close(); //close the file object.
+    }
+}
+
+void welcomeWordist()
+{
+    fstream newfile;
+
+    newfile.open("..\\textFiles\\WelcomeToWordist.txt", ios::in); //open a file to perform read operation using file object
+    if (newfile.is_open()) { //checking whether the file is open
+        string tp;
+        while (getline(newfile, tp)) { //read data from file object and put it into string.
+            cout << tp << endl; //print the data of the string
+        }
+        newfile.close(); //close the file object.
+    }
+}
+
+void welcomeBullsAndCows()
+{
+    fstream newfile;
+
+    newfile.open("..\\textFiles\\WelcomeToBullsAndCows.txt", ios::in); //open a file to perform read operation using file object
+    if (newfile.is_open()) { //checking whether the file is open
+        string tp;
+        while (getline(newfile, tp)) { //read data from file object and put it into string.
+            cout << tp << endl; //print the data of the string
+        }
+        newfile.close(); //close the file object.
+    }
+}
+
+
+
+
+
+
 
 int main()
 {
+    welcomeBrainUp();
+    cout << endl;
     int choose;
-    cout << "choose your game" << endl << "Bulls and Cows - 1" << endl << "Guess the Word - 2";
+    cout << "Choose your game" << endl << "Bulls and Cows - 1" << endl << "Guess the Word - 2" << endl;
+    cout << "Write your number here: ";
     cin >> choose;
 
     if (choose == 1) {
+        system("cls");
+        welcomeBullsAndCows();
+        cout << endl;
         int d1, d2, d3, d4;
         int g1, g2, g3, g4;
         int gNum;
@@ -62,7 +118,9 @@ int main()
         cout << "Game over " << "the number was " << d[0] << d[1] << d[2] << d[3] << endl;
     }
     else if (choose == 2) {
-
+        system("cls");
+        welcomeWordist();
+        cout << endl;
         string category;
         const int dataSize = 45;
         vector < string > arr; //random word from Dim2d
