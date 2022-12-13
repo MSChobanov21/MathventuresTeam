@@ -116,3 +116,22 @@ string Dim2d[dataSize][2] = {
         { "3","volkswagen" },
         { "3","dacia" },
 
+};
+string element;
+srand(time(NULL));
+
+
+
+cout << "Choose your category (1 - 2 - 3)" << endl << "Animals - 1" << endl << "Movies - 2" << endl << "Car brands - 3" << endl;
+cin >> category;
+
+
+
+
+
+for (int counter = 0; counter < dataSize; counter++) {
+    if (Dim2d[counter][0] == category) {
+        arr.push_back(Dim2d[counter][1]);
+        catCounter++;
+    }
+
