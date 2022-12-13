@@ -145,5 +145,14 @@ int main()
         word = arr[rand() % catCounter];
         gWord = word;
         int wordlen = size(word);
+
+        for (int coun = 0; coun != wordlen; coun++) {
+            if (word[coun] != ' ') {
+                gWord[coun] = '#';
+            }
+            else {
+                gWord[coun] = ' ';
+            }
+        }
     }
 }
