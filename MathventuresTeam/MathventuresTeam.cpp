@@ -123,7 +123,7 @@ int main()
         cout << endl;
         string category;
         const int dataSize = 45;
-        vector < string > arr; //random word from Dim2d
+        vector < string > arr;
         string word, gWord;
         int catCounter = 0;
         char symb;
@@ -212,7 +212,41 @@ int main()
                 gWord[coun] = ' ';
             }
         }
+        cout << "You have " << wordlen + 5 << " attempts left" << endl;
+        for (att = wordlen + 4; att != -1; att--) {
+            for (int b = 0; b != wordlen; b++) {
+                if (gWord[b] == '#') {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag != 1) {
+                cout << "You win!" << endl << "The word is '" << gWord << "'";
+                break;
+            }
+            else {
+                flag = 0;
+            }
 
-
+            cout << gWord << endl;
+            cout << "Enter the symbol:" << endl;
+            cin >> symb;
+            symb = tolower(symb);
+            for (int n = 0; n != wordlen; n++) {
+                if (word[n] == symb) {
+                    gWord[n] = symb;
+                    flag2 = 1;
+                }
+            }
+            if (flag2 == 1) {
+                att++;
+                cout << "Good job!" << endl;
+            }
+            flag2 = 0;
+            cout << "You have " << att << " attempts left" << endl;
+        }
+        cout << endl;
+        if (att == -1) cout << "Game Over! The word is '" << word << "'" << endl;
+        system("pause");
     }
 }
