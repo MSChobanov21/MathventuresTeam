@@ -106,7 +106,7 @@ int main()
                 { "2","james bond" },
                 { "2","doctor strange" },
 
-                 { "3","bmv" },
+                { "3","bmv" },
                 { "3","mercedes" },
                 { "3","lamborghini" },
                 { "3","ferrari" },
@@ -141,5 +141,9 @@ int main()
                 catCounter++;
             }
         }
+
+        word = arr[rand() % catCounter];
+        gWord = word;
+        int wordlen = size(word);
     }
 }
