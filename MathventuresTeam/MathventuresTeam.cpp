@@ -154,5 +154,7 @@ int main()
                 gWord[coun] = ' ';
             }
         }
+
+
     }
 }
