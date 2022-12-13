@@ -66,3 +66,21 @@ char symb;
 int flag = 0;
 int flag2 = 0;
 int att = 0;
+
+string Dim2d[dataSize][2] = {
+       { "1","lion" },
+       { "1","rabbit" },
+       { "1","panther" },
+       { "1","tiger" },
+       { "1","elephant" },
+       { "1","wolf" },
+       { "1","cat" },
+       { "1","dog"} ,
+       { "1","dolphine" },
+       { "1","hamster" },
+       { "1","whale" },
+       { "1","monkey" },
+       { "1","deer" },
+       { "1","bear" },
+       { "1","fox" },
+
