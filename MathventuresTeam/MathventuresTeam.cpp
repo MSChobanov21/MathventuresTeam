@@ -56,3 +56,13 @@ int main()
     }
     cout << "Game over " << "the number was " << d[0] << d[1] << d[2] << d[3] << endl;
 }
+
+string category;
+const int dataSize = 45;
+vector < string > arr; //random word from Dim2d
+string word, gWord;
+int catCounter = 0;
+char symb;
+int flag = 0;
+int flag2 = 0;
+int att = 0;
